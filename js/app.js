@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const email = {
         email: '',
-        ccemail: '',
         asunto: '',
         mensaje: ''
     }
@@ -117,9 +116,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Asignar los valores
         email[e.target.name] = e.target.value.trim().toLowerCase();
-
-        // Comprobar el objeto de email
-        comprobarEmail();
     }
 
     function comprobarEmail() {
@@ -135,7 +131,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function resetFormulario() {
         // reiniciar el objeto
         email.email = '';
-        email.ccemail = '';
         email.asunto = '';
         email.mensaje = '';
 
